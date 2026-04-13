@@ -1,0 +1,423 @@
+[
+    {
+        "id": 1,
+        "name": "Online English Tutoring",
+        "category": "Education",
+        "price": 80,
+        "rating": 4.7,
+        "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80",
+        "provider": {
+            "name": "BrightMind Academy",
+            "location": "Jakarta",
+            "contact": "021-123456"
+        },
+        "schedule": {
+            "days": [
+                "Monday",
+                "Wednesday",
+                "Friday"
+            ],
+            "time": "16:00 - 18:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Graphic Design Masterclass",
+        "category": "Creative",
+        "price": 120,
+        "rating": 4.8,
+        "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
+        "provider": {
+            "name": "DesignHub",
+            "location": "Bandung",
+            "contact": "022-987654"
+        },
+        "schedule": {
+            "days": [
+                "Tuesday",
+                "Thursday"
+            ],
+            "time": "13:00 - 16:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Home Cleaning Service",
+        "category": "Household",
+        "price": 45,
+        "rating": 4.6,
+        "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80",
+        "provider": {
+            "name": "Sparkle Clean",
+            "location": "Surabaya",
+            "contact": "031-456789"
+        },
+        "schedule": {
+            "days": [
+                "Monday",
+                "Saturday"
+            ],
+            "time": "08:00 - 12:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Car Rental Service",
+        "category": "Transportation",
+        "price": 75,
+        "rating": 4.5,
+        "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
+        "provider": {
+            "name": "DriveNow",
+            "location": "Bali",
+            "contact": "0361-223344"
+        },
+        "schedule": {
+            "days": [
+                "Monday",
+                "Sunday"
+            ],
+            "time": "24 Hours",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Yoga and Meditation Class",
+        "category": "Wellness",
+        "price": 35,
+        "rating": 4.9,
+        "image": "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800&q=80",
+        "provider": {
+            "name": "ZenLife Studio",
+            "location": "Yogyakarta",
+            "contact": "0274-556677"
+        },
+        "schedule": {
+            "days": [
+                "Wednesday",
+                "Saturday"
+            ],
+            "time": "07:00 - 09:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Web Development Bootcamp",
+        "category": "Technology",
+        "price": 250,
+        "rating": 4.9,
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80",
+        "provider": {
+            "name": "CodeLabs Indonesia",
+            "location": "Jakarta",
+            "contact": "021-778899"
+        },
+        "schedule": {
+            "days": [
+                "Monday",
+                "Friday"
+            ],
+            "time": "19:00 - 21:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Professional Photography",
+        "category": "Creative",
+        "price": 180,
+        "rating": 4.8,
+        "image": "https://images.unsplash.com/photo-1502920917128-1aa500764b3e?w=800&q=80",
+        "provider": {
+            "name": "Lens Studio",
+            "location": "Malang",
+            "contact": "0341-998877"
+        },
+        "schedule": {
+            "days": [
+                "Friday",
+                "Sunday"
+            ],
+            "time": "10:00 - 18:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Pet Grooming Service",
+        "category": "Pet Care",
+        "price": 50,
+        "rating": 4.6,
+        "image": "https://images.unsplash.com/photo-1516734212186-65266f2c5c2b?w=800&q=80",
+        "provider": {
+            "name": "Happy Paws",
+            "location": "Semarang",
+            "contact": "024-334455"
+        },
+        "schedule": {
+            "days": [
+                "Tuesday",
+                "Sunday"
+            ],
+            "time": "09:00 - 15:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Interior Design Consultation",
+        "category": "Consulting",
+        "price": 200,
+        "rating": 4.7,
+        "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80",
+        "provider": {
+            "name": "SpaceArt Studio",
+            "location": "Surabaya",
+            "contact": "031-223355"
+        },
+        "schedule": {
+            "days": [
+                "Monday",
+                "Thursday"
+            ],
+            "time": "11:00 - 15:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 10,
+        "name": "Mobile App Development Service",
+        "category": "Technology",
+        "price": 500,
+        "rating": 4.9,
+        "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+        "provider": {
+            "name": "InnovateTech",
+            "location": "Jakarta",
+            "contact": "021-667788"
+        },
+        "schedule": {
+            "days": [
+                "Monday",
+                "Friday"
+            ],
+            "time": "By Appointment",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 11,
+        "name": "Music Course",
+        "category": "Education",
+        "price": 60,
+        "rating": 4.5,
+        "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&q=80",
+        "provider": {
+            "name": "Harmony School",
+            "location": "Bandung",
+            "contact": "022-445566"
+        },
+        "schedule": {
+            "days": [
+                "Tuesday",
+                "Thursday"
+            ],
+            "time": "15:00 - 17:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 12,
+        "name": "Tour Guide Service",
+        "category": "Tourism",
+        "price": 110,
+        "rating": 4.8,
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+        "provider": {
+            "name": "Explore Nusantara",
+            "location": "Bali",
+            "contact": "0361-889900"
+        },
+        "schedule": {
+            "days": [
+                "Monday",
+                "Sunday"
+            ],
+            "time": "08:00 - 17:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 13,
+        "name": "Catering Service",
+        "category": "Food & Beverage",
+        "price": 220,
+        "rating": 4.7,
+        "image": "https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=80",
+        "provider": {
+            "name": "Delicious Kitchen",
+            "location": "Surabaya",
+            "contact": "031-556677"
+        },
+        "schedule": {
+            "days": [
+                "Monday",
+                "Sunday"
+            ],
+            "time": "By Order",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 14,
+        "name": "Makeup Artist Service",
+        "category": "Beauty",
+        "price": 130,
+        "rating": 4.9,
+        "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80",
+        "provider": {
+            "name": "Glam Studio",
+            "location": "Jakarta",
+            "contact": "021-998877"
+        },
+        "schedule": {
+            "days": [
+                "Saturday",
+                "Sunday"
+            ],
+            "time": "09:00 - 14:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 15,
+        "name": "Computer Repair Service",
+        "category": "Technology",
+        "price": 70,
+        "rating": 4.4,
+        "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+        "provider": {
+            "name": "TechFix Solutions",
+            "location": "Medan",
+            "contact": "061-334455"
+        },
+        "schedule": {
+            "days": [
+                "Monday",
+                "Saturday"
+            ],
+            "time": "09:00 - 17:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 16,
+        "name": "Personal Fitness Trainer",
+        "category": "Wellness",
+        "price": 90,
+        "rating": 4.8,
+        "image": "https://images.unsplash.com/photo-1550345332-09e3ac987658?w=800&q=80",
+        "provider": {
+            "name": "FitLife Coach",
+            "location": "Jakarta",
+            "contact": "021-112233"
+        },
+        "schedule": {
+            "days": [
+                "Tuesday",
+                "Friday"
+            ],
+            "time": "06:00 - 08:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 17,
+        "name": "Digital Marketing Consultation",
+        "category": "Consulting",
+        "price": 150,
+        "rating": 4.7,
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+        "provider": {
+            "name": "MarketPro Agency",
+            "location": "Jakarta",
+            "contact": "021-556688"
+        },
+        "schedule": {
+            "days": [
+                "Wednesday",
+                "Friday"
+            ],
+            "time": "10:00 - 12:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 18,
+        "name": "Laundry and Dry Cleaning",
+        "category": "Household",
+        "price": 25,
+        "rating": 4.5,
+        "image": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=800&q=80",
+        "provider": {
+            "name": "FreshClean Laundry",
+            "location": "Yogyakarta",
+            "contact": "0274-223344"
+        },
+        "schedule": {
+            "days": [
+                "Monday",
+                "Saturday"
+            ],
+            "time": "08:00 - 17:00",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 19,
+        "name": "Event Organizer Service",
+        "category": "Event",
+        "price": 350,
+        "rating": 4.9,
+        "image": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80",
+        "provider": {
+            "name": "Grand Events Organizer",
+            "location": "Jakarta",
+            "contact": "021-778811"
+        },
+        "schedule": {
+            "days": [
+                "Monday",
+                "Sunday"
+            ],
+            "time": "By Appointment",
+            "availability": "Available"
+        }
+    },
+    {
+        "id": 20,
+        "name": "Language Translation Service",
+        "category": "Professional",
+        "price": 95,
+        "rating": 4.6,
+        "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
+        "provider": {
+            "name": "Global Translate",
+            "location": "Bandung",
+            "contact": "022-665544"
+        },
+        "schedule": {
+            "days": [
+                "Monday",
+                "Friday"
+            ],
+            "time": "09:00 - 17:00",
+            "availability": "Available"
+        }
+    }
+]

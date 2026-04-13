@@ -5,7 +5,8 @@ import KalkulatorOBE from "./SPLCalculator";
 
 createRoot(document.getElementById("root"))
     .render(
-        <div>
+        <div className="">
             <KalkulatorOBE />
         </div>
     )
+

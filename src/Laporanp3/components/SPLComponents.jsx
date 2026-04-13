@@ -43,6 +43,8 @@ export function MatrixInput({ matrix, onChange }) {
                             className="w-16 h-12 text-center border rounded"
                             placeholder={`a${i + 1}${j + 1}`}
                         />
+
+                        
                     ))}
                 </div>
             ))}
