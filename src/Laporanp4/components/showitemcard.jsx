@@ -1,8 +1,6 @@
 import React from "react";
 
-/* ================================
-   VIEW SELECTOR (MODERN HEADER)
-================================ */
+/*VIEW SELECTOR (MODERN HEADER)*/
 export const ViewSelector = ({ view, setView }) => {
     return (
         <div className="bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-500 
@@ -19,8 +17,8 @@ export const ViewSelector = ({ view, setView }) => {
                     value={view}
                     onChange={(e) => setView(e.target.value)}
                     className="bg-white/90 backdrop-blur-md text-gray-800 
-                     px-4 py-2 rounded-lg shadow-md border border-white/30 
-                     focus:outline-none focus:ring-2 focus:ring-white"
+                    px-4 py-2 rounded-lg shadow-md border border-white/30 
+                    focus:outline-none focus:ring-2 focus:ring-white"
                 >
                     <option value="guest">Guest View</option>
                     <option value="admin">Admin View</option>
@@ -30,9 +28,7 @@ export const ViewSelector = ({ view, setView }) => {
     );
 };
 
-/* ================================
-   SEARCH & FILTER COMPONENT
-================================ */
+/*SEARCH & FILTER COMPONENT*/
 export const SearchFilter = ({
     search,
     setSearch,
@@ -50,7 +46,7 @@ export const SearchFilter = ({
                     type="text"
                     placeholder="Search services..."
                     className="border border-gray-200 p-3 rounded-lg w-full 
-                     focus:ring-2 focus:ring-indigo-500 outline-none"
+                    focus:ring-2 focus:ring-indigo-500 outline-none"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                 />
@@ -58,7 +54,7 @@ export const SearchFilter = ({
                 {/* Category Filter */}
                 <select
                     className="border border-gray-200 p-3 rounded-lg w-full 
-                     focus:ring-2 focus:ring-indigo-500 outline-none"
+                    focus:ring-2 focus:ring-indigo-500 outline-none"
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
                 >
@@ -73,7 +69,7 @@ export const SearchFilter = ({
                 {/* Availability Filter */}
                 <select
                     className="border border-gray-200 p-3 rounded-lg w-full 
-                     focus:ring-2 focus:ring-indigo-500 outline-none"
+                    focus:ring-2 focus:ring-indigo-500 outline-none"
                     value={availability}
                     onChange={(e) => setAvailability(e.target.value)}
                 >
@@ -86,9 +82,7 @@ export const SearchFilter = ({
     );
 };
 
-/* ================================
-   SERVICE CARD (GUEST VIEW)
-================================ */
+/* CARD (GUEST VIEW)*/
 export const ServiceCard = ({ service }) => {
     const fallbackImage =
         "https://via.placeholder.com/400x300?text=No+Image";
@@ -96,8 +90,8 @@ export const ServiceCard = ({ service }) => {
     return (
         <div
             className="bg-white rounded-2xl overflow-hidden shadow-md 
-                 hover:shadow-2xl hover:-translate-y-2 
-                 transition-all duration-300"
+                hover:shadow-2xl hover:-translate-y-2 
+                transition-all duration-300"
         >
             <div className="relative">
                 <img
@@ -110,8 +104,8 @@ export const ServiceCard = ({ service }) => {
                 />
                 <span
                     className="absolute top-3 right-3 
-                     bg-indigo-600 text-white text-xs 
-                     px-3 py-1 rounded-full shadow"
+                    bg-indigo-600 text-white text-xs 
+                    px-3 py-1 rounded-full shadow"
                 >
                     ⭐ {service.rating}
                 </span>
@@ -154,9 +148,7 @@ export const ServiceCard = ({ service }) => {
     );
 };
 
-/* ================================
-   SERVICE TABLE (ADMIN VIEW)
-================================ */
+/*SERVICE TABLE (ADMIN VIEW)*/
 export const ServiceTable = ({ services }) => {
     return (
         <div className="bg-white p-5 rounded-2xl shadow-md overflow-x-auto">
@@ -210,9 +202,7 @@ export const ServiceTable = ({ services }) => {
     );
 };
 
-/* ================================
-   GUEST VIEW
-================================ */
+/*GUEST VIEW*/
 export const GuestView = ({ services }) => {
     return (
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -223,9 +213,7 @@ export const GuestView = ({ services }) => {
     );
 };
 
-/* ================================
-   ADMIN VIEW
-================================ */
+/*DMIN VIEW*/
 export const AdminView = ({ services }) => {
     return <ServiceTable services={services} />;
 };
