@@ -1,3 +1,4 @@
+import { AiFillAlipaySquare } from "react-icons/ai"; 
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { BsPersonFill } from "react-icons/bs";
@@ -24,23 +25,23 @@ const Sidebar = () => {
     const menuClass = ({ isActive }) =>
         `flex items-center gap-3 px-3 py-2 rounded-lg transition text-sm ${isActive
             ? isLight
-                ? "bg-white text-teal-600 shadow-sm font-semibold"
+                ? "bg-purple-100 text-purple-400 shadow-sm font-semibold"
                 : "bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-md font-semibold"
             : isLight
-                ? "text-white/85 hover:bg-white/15 hover:text-white"
+                ? "text-gray-400 hover:bg-white/15 hover:text-purple-400"
                 : "text-gray-400 hover:bg-white/10"
         }`;
 
     return (
-        <div className={`sticky top-0 h-screen w-64 shrink-0 border-r text-gray-300 flex flex-col justify-between p-4 ${isLight ? "border-teal-400 bg-teal-500" : "border-white/10 bg-[#0b0f19]"}`}>
+        <div className={`sticky top-0 h-screen w-64 shrink-0 border-r text-gray-300 flex flex-col justify-between p-4 ${isLight ? " bg-white" : "border-white/10 bg-[#0b0f19]"}`}>
 
             {/* Top */}
             <div className="overflow-y-auto pr-1">
 
                 {/* Logo */}
                 <div className="flex items-center gap-2 mb-8">
-                    <div className={`w-6 h-6 rounded-sm ${isLight ? "bg-white" : "bg-gradient-to-tr from-cyan-400 to-blue-500"}`}></div>
-                    <h1 className="text-white font-semibold text-lg">Bright Wash</h1>
+                    <div className={`w-6 h-6 rounded-sm ${isLight ? "bg-purple-500" : "bg-gradient-to-tr from-cyan-400 to-blue-500"}`}  ></div>
+                    <h1 className="text-gray-600 font-semibold text-lg">Bright Wash</h1>
                 </div>
 
                 {/* MENU */}
@@ -106,7 +107,7 @@ const Sidebar = () => {
                     </ul>
                 </div>
 
-                {/* OTHERS */}
+                {/* OTHERS
                 <div>
                     <p className={`text-xs mb-3 ${isLight ? "text-white/70" : "text-gray-500"}`}>OTHERS</p>
 
@@ -124,26 +125,26 @@ const Sidebar = () => {
                         <SidebarItem icon={<HelpCircle size={18} />} label="Help & Support" isLight={isLight} />
 
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <div className="space-y-3">
                 <button
                     type="button"
                     onClick={toggleTheme}
-                    className={`flex w-full items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition ${isLight ? "bg-white text-teal-600 hover:bg-teal-50" : "bg-white/5 text-gray-300 hover:bg-white/10"}`}
+                    className={`flex w-full items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition ${isLight ? "bg-white text-purple-600 hover:bg-purple-50" : "bg-white/5 text-gray-300 hover:bg-white/10"}`}
                 >
                     {isLight ? <Moon size={17} /> : <Sun size={17} />}
                     {isLight ? "Dark Mode" : "Light Mode"}
                 </button>
 
                 {/* Bottom Profile */}
-                <div className={`${isLight ? "bg-white/15" : "bg-white/5"} p-3 rounded-xl flex items-center gap-3`}>
-                    <div className={`w-10 h-10 rounded-full ${isLight ? "bg-teal-100" : "bg-gray-600"}`}></div>
+                <div className={`${isLight ? "bg-gray-200" : "bg-white/5"} p-3 rounded-xl flex items-center gap-3`}>
+                    <div className={`w-10 h-10 rounded-full ${isLight ? "bg-purple-100" : "bg-gray-600"}`}></div>
 
                     <div>
-                        <p className="text-sm text-white">User Name</p>
-                        <p className={`${isLight ? "text-white/70" : "text-gray-400"} text-xs`}>View Profile</p>
+                        <p className="text-sm text-gray-400">User Name</p>
+                        <p className={`${isLight ? "text-gray-400" : "text-white"} text-xs`}>View Profile</p>
                     </div>
                 </div>
             </div>

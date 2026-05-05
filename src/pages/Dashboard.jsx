@@ -145,13 +145,13 @@ const RevenueChart = () => {
     const totalRevenue = chartData.reduce((total, item) => total + item.revenue, 0);
 
     return (
-        <div className={`rounded-lg border p-6 shadow-2xl ${isLight ? "border-teal-100 bg-teal-50 text-slate-700 shadow-teal-100" : "border-transparent bg-[#06090f] text-white shadow-black/30"}`}>
+        <div className={`rounded-lg border p-6 shadow-2xl ${isLight ? "border-white bg-white text-slate-700 shadow-gray-100" : "border-transparent bg-[#06090f] text-white shadow-black/30"}`}>
             <div className="mb-6 flex items-center justify-between">
                 <div>
                     <h2 className="text-lg font-semibold">Revenue Trend</h2>
                     <p className={`text-sm ${isLight ? "text-slate-500" : "text-gray-400"}`}>Completed orders revenue by month</p>
                 </div>
-                <span className={`text-sm ${isLight ? "text-teal-600" : "text-emerald-300"}`}>
+                <span className={`text-sm ${isLight ? "text-gray-600" : "text-emerald-300"}`}>
                     {formatCurrency(totalRevenue)}
                 </span>
             </div>
@@ -171,7 +171,7 @@ const RevenueChart = () => {
                 <polyline
                     points={points}
                     fill="none"
-                    stroke={isLight ? "#0d9488" : "#4de0c0"}
+                    stroke={isLight ? "#A280FF" : "#4de0c0"}
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="4"
@@ -183,7 +183,7 @@ const RevenueChart = () => {
 
                     return (
                         <g key={item.key}>
-                            <circle cx={x} cy={y} r="5" fill={isLight ? "#0d9488" : "#4de0c0"} />
+                            <circle cx={x} cy={y} r="5" fill={isLight ? "#A280FF" : "#4de0c0"} />
                             <text
                                 x={x}
                                 y="220"
@@ -205,7 +205,7 @@ const OrdersChart = () => {
     const maxOrders = Math.max(...chartData.map((item) => item.orders), 1);
 
     return (
-        <div className={`rounded-lg border p-6 shadow-2xl ${isLight ? "border-teal-100 bg-teal-50 text-slate-700 shadow-teal-100" : "border-transparent bg-[#06090f] text-white shadow-black/30"}`}>
+        <div className={`rounded-lg border p-6 shadow-2xl ${isLight ? "border-white bg-white text-slate-700 shadow-gray-100" : "border-transparent bg-[#06090f] text-white shadow-black/30"}`}>
             <div className="mb-6">
                 <h2 className="text-lg font-semibold">Order Volume</h2>
                 <p className={`text-sm ${isLight ? "text-slate-500" : "text-gray-400"}`}>Orders compared by month</p>
@@ -216,7 +216,7 @@ const OrdersChart = () => {
                     <div key={item.key} className="flex flex-1 flex-col items-center gap-3">
                         <div className={`flex h-56 w-full items-end ${isLight ? "bg-white" : "bg-white/5"}`}>
                             <div
-                                className={isLight ? "w-full bg-teal-500" : "w-full bg-gradient-to-t from-cyan-500 to-emerald-300"}
+                                className={isLight ? "w-full bg-purple-300" : "w-full bg-gradient-to-t from-cyan-500 to-emerald-300"}
                                 style={{ height: `${(item.orders / maxOrders) * 100}%` }}
                             ></div>
                         </div>

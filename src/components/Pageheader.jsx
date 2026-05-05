@@ -17,7 +17,7 @@ const PageHeader = ({ title, breadcrumb }) => {
                                 <span
                                     className={
                                         index === breadcrumb.length - 1
-                                            ? `${isLight ? "text-teal-600" : "text-white"} font-medium`
+                                            ? `${isLight ? "text-gray-700" : "text-white"} font-medium`
                                             : ""
                                     }
                                 >
@@ -30,7 +30,7 @@ const PageHeader = ({ title, breadcrumb }) => {
             )}
 
             {/* Title */}
-            <h1 className={`${isLight ? "text-teal-600" : "text-white"} text-2xl font-semibold`}>
+            <h1 className={`${isLight ? "text-gray-700" : "text-white"} text-2xl font-semibold`}>
                 {title}
             </h1>
 

@@ -14,10 +14,10 @@ const MetricCard = ({ metric }) => {
             : "bg-red-500/15 text-red-300";
 
     return (
-        <article className={`min-h-28 rounded-lg border p-5 shadow-2xl ${isLight ? "border-teal-100 bg-teal-50 shadow-teal-100" : "border-white/5 bg-[#06090f]/95 shadow-black/35"}`}>
+        <article className={`min-h-28 rounded-lg border p-5 shadow-2xl ${isLight ? "border-gray-100 bg-white shadow-gray-100" : "border-white/5 bg-[#06090f]/95 shadow-black/35"}`}>
             <div>
                 <p className={`text-sm ${isLight ? "text-slate-500" : "text-gray-300"}`}>{metric.label}</p>
-                <p className={`mt-2 text-2xl font-bold ${isLight ? "text-teal-600" : "text-white"}`}>
+                <p className={`mt-2 text-2xl font-bold ${isLight ? "text-black" : "text-white"}`}>
                     {metric.value}
                 </p>
                 <div className={`mt-3 flex items-center gap-2 text-xs ${isLight ? "text-slate-500" : "text-gray-400"}`}>
