@@ -9,7 +9,7 @@ import {
     SearchFilter,
     GuestView,
     AdminView,
-} from "./components/showitemcard";
+} from "./components/ShowItemCard";
 
 function Root() {
     const [view, setView] = useState("guest");

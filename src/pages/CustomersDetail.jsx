@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import axios from "axios"
 
-export default function ProductDetail() {
+export default function CustomersDetail() {
     const { id } = useParams()
     const [product, setProduct] = useState(null)
     const [error, setError] = useState(null)
