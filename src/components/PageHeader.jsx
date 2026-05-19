@@ -6,8 +6,6 @@ const PageHeader = ({ title, breadcrumb }) => {
 
     return (
         <div className="mb-6">
-
-
             {/* Breadcrumb */}
             {breadcrumb && (
                 <div className={`flex items-center gap-2 text-sm mb-2 ${isLight ? "text-slate-500" : "text-gray-400"}`}>

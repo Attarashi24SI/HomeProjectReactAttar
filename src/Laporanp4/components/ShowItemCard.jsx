@@ -1,4 +1,5 @@
 import React from "react";
+import SearchBar from "../../components/SearchBar";
 
 /*VIEW SELECTOR (MODERN HEADER)*/
 export const ViewSelector = ({ view, setView }) => {
@@ -41,14 +42,10 @@ export const SearchFilter = ({
     return (
         <div className="bg-white/70 backdrop-blur-md p-5 rounded-2xl shadow-md mb-6">
             <div className="grid md:grid-cols-3 gap-4">
-                {/* Search */}
-                <input
-                    type="text"
-                    placeholder="Search services..."
-                    className="border border-gray-200 p-3 rounded-lg w-full 
-                    focus:ring-2 focus:ring-indigo-500 outline-none"
+                <SearchBar
                     value={search}
-                    onChange={(e) => setSearch(e.target.value)}
+                    onChange={setSearch}
+                    placeholder="Search services..."
                 />
 
                 {/* Category Filter */}

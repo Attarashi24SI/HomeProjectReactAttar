@@ -1,6 +1,7 @@
 import React from "react";
 import { ChevronDown, Search } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
+import ProfileAvatar from "./ProfileAvatar";
 
 const Header = () => {
     const { isLight } = useTheme();
@@ -25,7 +26,7 @@ const Header = () => {
                         <p className={`text-xs ${isLight ? "text-slate-500" : "text-white/65"}`}>uroos.design@gmail.com</p>
                     </div>
 
-                    <div className={`h-11 w-11 rounded-full ${isLight ? "bg-rose-400" : "bg-gradient-to-br from-amber-300 to-orange-600"}`}></div>
+                    <ProfileAvatar name="Uroos Fatima" />
 
                     <button className={`flex h-9 w-9 items-center justify-center ${isLight ? "text-slate-500" : "text-white/85"}`}>
                         <ChevronDown className="h-5 w-5" />

@@ -1,7 +1,7 @@
 import React from "react";
 import PageHeader from "../components/PageHeader";
 import ordersData from "../assets/data/OrderData.json";
-import MetricCard from "./MetricCard";
+import MetricCard from "../components/MetricCard";
 import { useTheme } from "../context/ThemeContext";
 
 const formatCurrency = (value) =>
